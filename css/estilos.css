@@ -1,0 +1,131 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #090b1a;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+}
+
+main {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+  background: #1b1938;
+  border-radius: 10px;
+  width: 1000px;
+  overflow: hidden;
+}
+
+main .card__content {
+  color: white;
+  padding: 5em;
+}
+
+main .card__content h1 {
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+
+main .card__content h1 span {
+  color: #aa5cdb;
+}
+
+main .card__content p {
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+main .card__stats {
+  margin-top: 4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+main .card__stats span {
+  font-weight: 700;
+  font-size: 1.5em;
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+
+main .card__img {
+  background-image: url(../images/image-header-desktop.jpg);
+  padding: 150px 250px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+main .card__img:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(159, 60, 221, 0.623);
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 30em 0;
+  }
+  main .card {
+    width: 300px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  main .card__content {
+    text-align: center;
+    padding: 1em;
+  }
+  main .card__content h1 {
+    margin-top: 1em;
+  }
+  main .card__stats {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 1em;
+  }
+  main .card__stats div {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  main .card__img {
+    background-image: url(../images/image-header-mobile.jpg);
+    padding: 125px 100px;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */
